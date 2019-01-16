@@ -1,10 +1,10 @@
 # Laravel Database Profiler
 
-[<img src="https://user-images.githubusercontent.com/1286821/43083932-4915853a-8ea0-11e8-8983-db9e0f04e772.png" alt="Become a Patron" width="160" />](https://patreon.com/dmitryivanov)
+[<img src="https://user-images.githubusercontent.com/1286821/43083932-4915853a-8ea0-11e8-8983-db9e0f04e772.png" alt="Become a Patron" width="160" />](https://www.patreon.com/illuminated)
 
-[![StyleCI](https://styleci.io/repos/68023936/shield?branch=master&style=flat)](https://styleci.io/repos/68023936)
-[![Build Status](https://travis-ci.org/dmitry-ivanov/laravel-db-profiler.svg?branch=master)](https://travis-ci.org/dmitry-ivanov/laravel-db-profiler)
-[![Coverage Status](https://coveralls.io/repos/github/dmitry-ivanov/laravel-db-profiler/badge.svg?branch=master)](https://coveralls.io/github/dmitry-ivanov/laravel-db-profiler?branch=master)
+[![StyleCI](https://styleci.io/repos/68023936/shield?branch=5.6&style=flat)](https://styleci.io/repos/68023936)
+[![Build Status](https://travis-ci.org/dmitry-ivanov/laravel-db-profiler.svg?branch=5.6)](https://travis-ci.org/dmitry-ivanov/laravel-db-profiler)
+[![Coverage Status](https://coveralls.io/repos/github/dmitry-ivanov/laravel-db-profiler/badge.svg?branch=5.6)](https://coveralls.io/github/dmitry-ivanov/laravel-db-profiler?branch=5.6)
 
 [![Latest Stable Version](https://poser.pugx.org/illuminated/db-profiler/v/stable)](https://packagist.org/packages/illuminated/db-profiler)
 [![Latest Unstable Version](https://poser.pugx.org/illuminated/db-profiler/v/unstable)](https://packagist.org/packages/illuminated/db-profiler)
@@ -21,7 +21,6 @@ DB profiling for Laravel web and console applications.
 | 5.4.*   | [5.4.*](https://github.com/dmitry-ivanov/laravel-db-profiler/tree/5.4) |
 | 5.5.*   | [5.5.*](https://github.com/dmitry-ivanov/laravel-db-profiler/tree/5.5) |
 | 5.6.*   | [5.6.*](https://github.com/dmitry-ivanov/laravel-db-profiler/tree/5.6) |
-| 5.7.*   | [5.7.*](https://github.com/dmitry-ivanov/laravel-db-profiler/tree/5.7) |
 
 Enabled only for `local` environment, you don't need to bother about `production`.
 
@@ -29,10 +28,10 @@ Enabled only for `local` environment, you don't need to bother about `production
 
 ## Usage
 
-1. Install the package via Composer:
+1. Install package through `composer`:
 
     ```shell
-    composer require illuminated/db-profiler
+    composer require "illuminated/db-profiler:5.6.*"
     ```
 
 2. Use `vvv` request parameter or `-vvv` cli option to enable profiling.
@@ -53,4 +52,4 @@ Use `-vvv` option for console profiling:
 
 The MIT License. Please see [License File](LICENSE) for more information.
 
-[<img src="https://user-images.githubusercontent.com/1286821/43086829-ff7c006e-8ea6-11e8-8b03-ecf97ca95b2e.png" alt="Support on Patreon" width="125" />](https://patreon.com/dmitryivanov)
+[<img src="https://user-images.githubusercontent.com/1286821/43086829-ff7c006e-8ea6-11e8-8b03-ecf97ca95b2e.png" alt="Support on Patreon" width="125" />](https://www.patreon.com/illuminated)

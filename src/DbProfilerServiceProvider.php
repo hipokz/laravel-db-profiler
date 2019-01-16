@@ -2,9 +2,10 @@
 
 namespace Illuminated\Database;
 
+use Illuminate\Database\Events\QueryExecuted;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Events\QueryExecuted;
 
 class DbProfilerServiceProvider extends ServiceProvider
 {
@@ -26,13 +27,13 @@ class DbProfilerServiceProvider extends ServiceProvider
         DB::listen(function (QueryExecuted $query) {
             $i = self::tickCounter();
             $sql = $this->applyBindings($query->sql, $query->bindings);
-            dump("[$i]: {$sql}; ({$query->time} ms)");
+            echo "[$i]: {$sql}; ({$query->time} ms) \n\n";
         });
     }
 
     private function isEnabled()
     {
-        if (!config('db-profiler.force') && !$this->app->isLocal()) {
+        if (!App::environment(['local'])) {
             return false;
         }
 
@@ -40,7 +41,7 @@ class DbProfilerServiceProvider extends ServiceProvider
             return in_array('-vvv', $_SERVER['argv']);
         }
 
-        return request()->exists('vvv');
+        return isset($_GET['vvv']);
     }
 
     private function applyBindings($sql, array $bindings)

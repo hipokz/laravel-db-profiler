@@ -1,6 +1,6 @@
 {
     "name": "hipokz/db-profiler",
-    "description": "DB profiling for Lumen web and console applications.",
+    "description": "DB profiling for Laravel web and console applications.",
     "keywords": ["lumen", "db", "database", "profiler", "profiling", "mysql"],
     "license": "MIT",
     "authors": [
@@ -15,15 +15,15 @@
     ],
     "require": {
         "php": "^7.1.3",
-        "illuminate/support": "5.7.*",
-        "illuminate/database": "5.7.*"
+        "illuminate/support": "5.6.*",
+        "illuminate/database": "5.6.*"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0",
         "mockery/mockery": "^1.0",
-        "orchestra/testbench": "3.7.*",
-        "illuminated/testing-tools": "5.7.*",
-        "illuminated/helper-functions": "5.7.*"
+        "orchestra/testbench": "3.6.*",
+        "illuminated/testing-tools": "5.6.*",
+        "illuminated/helper-functions": "5.6.*"
     },
     "autoload": {
         "psr-4": {
@@ -38,9 +38,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Illuminated\\Database\\DbProfilerServiceProvider"
-            ]
+            "providers": ["Illuminated\\Database\\DbProfilerServiceProvider"]
         }
     }
 }
