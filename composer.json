@@ -38,9 +38,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Illuminated\\Database\\DbProfilerServiceProvider"
-            ]
+            "providers": ["Illuminated\\Database\\DbProfilerServiceProvider"]
         }
     }
 }
